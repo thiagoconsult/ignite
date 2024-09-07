@@ -1,0 +1,125 @@
+.taskList {
+  margin-top: 4rem;
+}
+
+.taskList header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskCreated {
+  color: var(--blue-500);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* .taskList header span {
+  color: var(--gray-200);
+  margin-left: 0.5rem;
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+} */
+
+.taskCompleted {
+  color: var(--purple-500);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.taskEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px var(--gray-400);
+  border-radius: 8px;
+  /* margin-top: 1.5rem; */
+}
+
+.taskEmpty > img {
+  margin-top: 4rem;
+}
+
+.taskEmpty > strong {
+  margin-top: 1rem;
+  color: var(--gray-300);
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.taskEmpty > span {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.taskEmpty {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.content {
+  margin-top: 1.5rem;
+}
+
+.checkEmpty {
+  color: var(--blue-300);
+  margin: 0 auto;
+}
+
+.trash {
+  max-height: 24px;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.trash:hover {
+  color: var(--red-500);
+  background: var(--gray-400);
+}
+
+.status {
+  background: transparent;
+  max-height: 24px;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 auto;
+
+}
+
+.status svg {
+  color: var(--purple-500);
+}
+
+.status svg:hover {
+  color: var(--purple-300);
+}
+
+.task p {
+  max-width: 39.5rem;
+  color: var(--gray-100);
+  display: inline;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 1fr 39.5rem 1fr;
+  justify-content: flex-start;
+  background: var(--gray-500);
+  height: 4.5rem;
+  width: 46rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.list + .list {
+  margin-top: 0.75rem;
+}

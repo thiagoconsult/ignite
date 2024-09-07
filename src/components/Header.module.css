@@ -1,0 +1,27 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 4.5rem 0;
+}
+
+.logo{
+    height: 2.25rem;
+    width: 1.375rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.titleTo{
+    color: var(--blue-300);
+}
+
+.titleDo{
+    color: var(--purple-300);
+}
